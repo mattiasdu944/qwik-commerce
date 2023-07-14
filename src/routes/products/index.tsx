@@ -3,7 +3,7 @@ import { DocumentHead, routeLoader$ } from '@builder.io/qwik-city';
 
 import storeDb from '~/api/storeDb';
 import { Product } from '~/interfaces';
-import { PageBanner, ProductsList } from '~/components';
+import { PageBanner, ProductsList, SearchInput } from '~/components';
 
 
 
@@ -23,7 +23,10 @@ export default component$(() => {
                 description='Descubre nuestros productos de calidad al mejor precio'
             />
             <section class="section">
-                <h2 class="mb-5">Todos los productos</h2>
+                <div class="grid items-center mb-5 grid-cols-1 md:grid-cols-2">
+                    <h2>Todos los productos</h2>
+                    <SearchInput placeholder='Buscar productos'/>
+                </div>
                 <ProductsList products={ products.value }/>
             </section>
 

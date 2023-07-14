@@ -87,6 +87,6 @@
     }
 
     .search-input {
-        @apply border border-gray-300 rounded-lg py-3 px-5 w-full
+        @apply border-2 border-gray-300 rounded-lg py-3 px-5 w-full flex items-center justify-between
     }
 }
