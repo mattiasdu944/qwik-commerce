@@ -1,4 +1,5 @@
 import { component$ } from "@builder.io/qwik";
+
 import { Product } from "~/interfaces";
 
 export interface ProductCardProps {

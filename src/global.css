@@ -27,6 +27,10 @@
     h4{
         @apply text-lg font-bold
     }
+
+    input{
+        @apply border-none outline-none w-full
+    }
 }
 
 @layer components{
@@ -39,6 +43,10 @@
         @apply min-h-screen container py-10
     }
 
+    .banner {
+        @apply pt-[6rem] pb-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-16 flex flex-col justify-center
+    }
+
     /* .button-primary {
         @apply 
     } */
@@ -48,7 +56,7 @@
     }
 
     .navbar {
-        @apply fixed w-full
+        @apply fixed w-full z-10
     }
 
     .navbar__container{
@@ -68,13 +76,17 @@
         @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5
     }
 
+    /* PRODUCTS */
     .product__card {
         @apply border rounded-lg px-5 py-8 hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:scale-105 transition-all 
         cursor-pointer hover:text-white hover:shadow-md
-     }
+    }
 
     .product__card img{
         @apply w-[250px] h-auto mb-3 mx-auto
     }
 
+    .search-input {
+        @apply border border-gray-300 rounded-lg py-3 px-5 w-full
+    }
 }
