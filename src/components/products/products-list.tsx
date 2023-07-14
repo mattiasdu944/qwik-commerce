@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
+
 import { Product } from "~/interfaces";
-import { ProductCard } from './';
+import { ProductCard } from "./";
 
 interface ProductsListProps {
     products: Product[];

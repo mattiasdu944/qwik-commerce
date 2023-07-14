@@ -17,15 +17,15 @@ export const Navbar = component$(() => {
     return(
         <nav class={`navbar ${ isScroll.value && 'backdrop-blur-md bg-white/30 transition-all' }`}>
             <div class={`navbar__container`}>
-                <h1 class={`font-medium text-2xl ${ !isScroll.value && 'text-white' }`}>QwikCommerce</h1>
+                <h1 class={`font-medium text-2xl ${ !isScroll.value && 'text-white' }`}>QwikStore</h1>
                 <ul class="flex gap-5">
                     <li>
-                        <Link class={`font-medium ${ !isScroll.value && 'text-white' }`}>
+                        <Link href="/" class={`font-medium ${ !isScroll.value && 'text-white' }`}>
                             Inicio
                         </Link>
                     </li>
                     <li>
-                        <Link class={`font-medium ${ !isScroll.value && 'text-white' }`}>
+                        <Link href="/products" class={`font-medium ${ !isScroll.value && 'text-white' }`}>
                             Productos
                         </Link>
                     </li>

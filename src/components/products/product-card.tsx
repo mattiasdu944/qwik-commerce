@@ -10,7 +10,7 @@ export const ProductCard = component$<ProductCardProps>(({ product }) => {
 
     return (
         <div class="product__card">
-            <img src={`${ imageUrl + product.images[0].url }`} alt="" />
+            <img width={858} height={858} src={`${ imageUrl + product.images[0].url }`} alt="" />
             <h4 class="line-clamp-1">{ product.name }</h4>
             <p>Precio: { product.price }$</p>
         </div>

@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { Product } from "~/interfaces";
-import { ProductsList } from '../shared/products-list';
+import { ProductsList } from '../products/products-list';
 
 export interface MostPopularSectionProps {
   products: Product[];
