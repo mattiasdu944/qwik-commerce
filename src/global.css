@@ -43,6 +43,10 @@
         @apply min-h-screen container py-10
     }
 
+    .loading-view {
+        @apply min-h-screen flex items-center justify-center
+    }
+
     .banner {
         @apply pt-[6rem] pb-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-16 flex flex-col justify-center
     }
