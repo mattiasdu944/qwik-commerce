@@ -4,6 +4,7 @@ import storeDb from '~/api/storeDb';
 
 import { LoadingView, PageBanner } from '~/components';
 import { Product } from '~/interfaces';
+import { ProductBanner } from '../../../components/products/product-banner';
 
 interface ProductPageState {
     product   : Product;
@@ -35,7 +36,7 @@ export default component$(() => {
 
     return(
         <>
-            <PageBanner title={ productState.product.name }/>
+            <ProductBanner product={ productState.product }/>
         
         </>
     )    
